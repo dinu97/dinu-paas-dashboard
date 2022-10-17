@@ -3,10 +3,9 @@
 
 class Footer extends HTMLElement {
   connectedCallback() {
-    this.innerHTML = 
-      `
+    this.innerHTML =   `
 
-      <link href="components/footer/main-footer.css" rel="stylesheet">
+      <link href="\components\footer\main-footer.css" rel="stylesheet">
 
       <footer id="footerID" class="bg-primary text-white text-center text-lg-start">
       <!-- Grid container -->
