@@ -39,16 +39,16 @@ class Footer extends HTMLElement {
     
             <ul id="listID" class="list-unstyled mb-0">
               <li >
-                <a id="list1" href="#!" class="text-white">Data Governance</a>
+                <a id="list1" href="#!" style="text-decoration:none" class="text-white">Data Governance</a>
               </li>
               <li >
-                <a id="list2" href="#!" class="text-white">Virtual Events</a>
+                <a id="list2" href="#!" style="text-decoration:none" class="text-white">Virtual Events</a>
               </li>
               <li >
-                <a id="list3" href="#!" class="text-white">Virtual Users</a>
+                <a id="list3" href="#!" style="text-decoration:none" class="text-white">Virtual Users</a>
               </li>
               <li >
-                <a id="list4" href="#!" class="text-white">Connect</a>
+                <a id="list4" href="#!" style="text-decoration:none" class="text-white">Connect</a>
               </li>
             </ul>
           </div>
@@ -60,13 +60,13 @@ class Footer extends HTMLElement {
     
             <ul id="linkId" class="list-unstyled">
               <li>
-                <a id="limlId1" href="#!" class="text-white">Resources</a>
+                <a id="limlId1" href="#!" style="text-decoration:none" class="text-white">Resources</a>
               </li>
               <li>
-                <a id="limlId2" href="#!" class="text-white">Blog</a>
+                <a id="limlId2" href="#!" style="text-decoration:none" class="text-white">Blog</a>
               </li>
               <li>
-                <a id="limlId3" href="#!" class="text-white">Documents</a>
+                <a id="limlId3" href="#!" style="text-decoration:none" class="text-white">Documents</a>
               </li>
              
             </ul>
