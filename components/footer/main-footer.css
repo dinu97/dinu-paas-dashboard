@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+@import url('https://db.onlinewebfonts.com/c/000833a3a58fb083c44b9de42c2ff0a2?family=Gilroy+SemiBold');
 body{
     background-color:#F5F5F5 !important;
 }
@@ -89,7 +89,7 @@ body{
 }
 #footerID {
     background-color: #ffffff!important;
-    border-radius: 1.0px;
+    border-radius: 5px;
     border: 0.3px solid #1A2859;
 }
 
