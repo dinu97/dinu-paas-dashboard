@@ -1,0 +1,1146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <link rel="icon" type="image/x-icon"
+          href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnJlP9YDVIoxy1ywP31QZg8pYsifJCZDJvzA&usqp=CAU">
+    <title>PaaS Dashboard 2022-10-12</title>
+    <!-- Font Awesome -->
+    <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+            rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+            rel="stylesheet"
+    />
+    <!-- MDB -->
+    <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.css"
+            rel="stylesheet"
+    />
+    <link
+            href="main-style.css"
+            rel="stylesheet"
+    />
+    <!--Font-->
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <!--  Bootstrap  -->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+
+    <link rel="stylesheet" type="text/css" href="./fonts/fonts.css"/>
+    <link rel="stylesheet" type="text/css"
+          href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+
+<!--  Owl carousel JS  -->
+    <link rel="stylesheet" href="OwlCarousel/dist/assets/owl.carousel.min.css">
+
+
+</head>
+<body>
+<!-- Your code goes here -->
+<!-- Navbar -->
+<nav id="main-navbar" class="navbar fixed-top navbar-expand-lg navbar-light bg-white">
+    <!-- Container wrapper -->
+    <div class="container-fluid">
+
+        <!-- Brand -->
+        <a class="navbar-brand" href="#">
+            <img
+                    src="https://mdbcdn.b-cdn.net/img/logo/mdb-transaprent-noshadows.webp"
+                    height="25"
+                    alt="MDB Logo"
+                    loading="lazy"
+            />
+        </a>
+
+        <div class="app-container">
+            <div class="app-name">
+                <label>
+                    <input id="appNameId" contentEditable="true" maxlength="18" type="text" placeholder="Application Name">
+                    <i  id="imageId" class="fas fa-pencil-square-o" aria-hidden="true"></i>
+                    <!-- <img src="./assets/icons/pencil-fill.svg" alt="" class="image9 layout"> -->
+                </label>
+            </div>
+            <div class="app-page"></div>
+        </div>
+
+
+
+
+        <!-- <div class="dropdown layout">
+
+            <div class="flexx layout">
+
+                <div class="spacer"></div>
+
+                <form1 action="#">
+
+                    <select name="pageredirect" id="redirectId">
+                        <option value="home">HOME</option>
+                        <option value="about">ABOUT</option>
+                        <option value="contact">CONTACT</option>
+                        <option value="payment">PAYMENT</option>
+                        <option value="checkout">CHECKOUT</option>
+                    </select>
+                </form1>
+
+
+                <div class="spacer"></div>
+
+            </div>
+
+
+            <div class="dropdown1 layout">
+
+
+            </div>
+        </div> -->
+
+        <div id="pageselectId" class="btn-group shadow-0">
+            <button type="button" class="btn btn-light dropdown-toggle" id="dropdownId" data-mdb-toggle="dropdown" aria-expanded="false">
+              select page
+            </button>
+            <ul id="dropdownmenuId" class="dropdown-menu" >
+              <li onclick="dropdownFunction()" id="dropdownId1">
+                <a class="dropdown-item" href="#">HOME</a></li>
+              <li onclick="dropdownFunction()" id="dropdownId2"><a class="dropdown-item" href="#">CONTACTUS</a></li>
+              <li onclick="dropdownFunction()" id="dropdownId3"><a class="dropdown-item" href="#">ABOUTUS</a></li>
+
+              <li onclick="dropdownFunction()" id="dropdownId4"><a class="dropdown-item" href="#">PAYMENTS</a></li>
+
+            </ul>
+          </div>
+
+
+
+
+        <!-- Right links -->
+        <!--<ul class="navbar-nav ms-auto d-flex flex-row">//-->
+        <!-- Center elements -->
+        <!-- <div class="ui-elements">
+            <ul class="navbar-nav flex-row d-none d-md-flex ms-5 ui-elements">
+                <li class="nav-item me-3 me-lg-1 ">
+                    <a id="visible-pc" class="nav-link top-nav-c" href="#"
+                       onclick="(function(){alert('ICON Clicked!');return false;})();return false;">
+                        <span><h3><i class="bi bi-tv"></i></h3></span>
+                    </a>
+                </li>
+                <li class="nav-item me-3 me-lg-1">
+                    <a id="visible-tab" class="nav-link top-nav-c" href="#"
+                       onclick="(function(){alert('ICON Clicked!');return false;})();return false;">
+                        <span><h3><i class="bi bi-tablet"></i></h3></span>
+                    </a>
+                </li>
+                <li class="nav-item me-3 me-lg-1">
+                    <a id="visible-mobile" class="nav-link top-nav-c" href="#"
+                       onclick="(function(){alert('ICON Clicked!');return false;})();return false;">
+                        <span><h3><i class="bi bi-phone"></i></h3></span>
+                    </a>
+                </li>
+            </ul>
+        </div> -->
+        <!--Visible icons nav-->
+        <!-- <ul class="navbar-nav flex-row d-none d-md-flex ms-5 ui-elements" id="ex1" role="tablist">
+            <li class="nav-item me-3 me-lg-1 " role="presentation">
+                <a class="nav-link top-nav-c" id="visible-pc" data-mdb-toggle="tab" href="#visible-pc:hover" role="tab"
+                    aria-controls="ex1-tabs-1" aria-selected="true"><i class="bi bi-tv fa-lg"></i></a>
+            </li>
+            <li class="nav-item me-3 me-lg-1" role="presentation">
+                <a class="nav-link top-nav-c" id="visible-tab" data-mdb-toggle="tab" href="#visible-tab:hover" role="tab"
+                    aria-controls="ex1-tabs-2" aria-selected="false"><i class="bi bi-tablet fa-lg"></i></a>
+            </li>
+            <li class="nav-item me-3 me-lg-1" role="presentation">
+                <a class="nav-link top-nav-c" id="visible-mobile" data-mdb-toggle="tab" href="#visible-mobile:hover" role="tab"
+                    aria-controls="ex1-tabs-3" aria-selected="false"><i class="bi bi-phone fa-lg"></i></a>
+            </li>
+        </ul> -->
+  <!-- Visible icons nav -->
+
+  <!-- Tabs navs -->
+<ul id="responsiveIcin" class="nav nav-tabs mb-3" id="ex1" role="tablist">
+    <li id="responsiveIcin1" class="nav-item" role="presentation">
+      <a
+        class="nav-link active"
+        id="ex1-tab-1"
+        data-mdb-toggle="tab"
+        href="#ex1-tabs-1"
+        role="tab"
+        aria-controls="ex1-tabs-1"
+        aria-selected="true"
+        ><i class="bi bi-tv fa-lg"></i></a
+      >
+    </li>
+    <li id="responsiveIcin2" class="nav-item" role="presentation">
+      <a
+        class="nav-link"
+        id="ex1-tab-2"
+        data-mdb-toggle="tab"
+        href="#ex1-tabs-2"
+        role="tab"
+        aria-controls="ex1-tabs-2"
+        aria-selected="false"
+        ><i class="bi bi-tablet fa-lg"></i></a
+      >
+    </li>
+    <li id="responsiveIcin3" class="nav-item" role="presentation">
+      <a
+        class="nav-link"
+        id="ex1-tab-3"
+        data-mdb-toggle="tab"
+        href="#ex1-tabs-3"
+        role="tab"
+        aria-controls="ex1-tabs-3"
+        aria-selected="false"
+        ><i class="bi bi-phone fa-lg"></i></a
+      >
+    </li>
+  </ul>
+
+
+
+        <!-- Center elements -->
+
+        <!-- Right elements -->
+        <ul class="navbar-nav flex-row">
+            <div class="d-flex align-items-center">
+                <button style="font-size:13px" type="button" class="btn btn-primary btn-lg me-5"
+                        onclick="location.href='./countryItems/index.html'"
+                >
+                    <span><i class="fas fa-code"></i></span>
+                </button>
+                <button style="font-size:12px" type="button" class="btn btn-outline-primary btn-1  me-4"
+                        onclick="(function(){alert('Preview Button Clicked!');return false;})();return false;"
+                >
+                    Preview
+                </button>
+                <button style="font-size:12px" type="button" class="btn btn-primary btn-1 me-4"
+                        onclick="(function(){alert('Publish Button Clicked!');return false;})();return false;"
+                >
+                    Publish
+                </button>
+            </div>
+        </ul>
+    </div>
+    <!-- Container wrapper -->
+</nav>
+<!-- Navbar -->
+<br>
+<!-- Start Left Sidebar -->
+<nav id="sidebarMenu-1" class="collapse d-lg-block sidebar collapse bg-white">
+    <div class="position-sticky">
+
+        <div class="list-group list-group-flush mx-3 mt-0">
+            <!-- Collapse 1 -->
+            <div class="sidebar-components">
+                <div class="title-container">
+                    <a style="border-radius:12px;"
+                       class="left-items list-group-item list-group-item-action py-2 ripple"
+                       aria-current="true"
+                       data-mdb-toggle="collapse"
+                       href="#collapseExample1"
+                       aria-expanded="true"
+                       aria-controls="collapseExample1"
+                    >
+                        <i class="fas fa-file-alt fa-fw me-3"></i><span>PAGES</span>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+                        &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;<i class="fas fa-angle-down ms-5"
+                                                                   style="color: #6C6C6C"></i>
+                    </a>
+                </div>
+                <!-- Collapsed content -->
+                <ul id="collapseExample1" class="collapse show list-group list-group-flush">
+                    <div class="row">
+                        <div class="row-inside">
+                            <div class="box-items-l-1"
+                                 onclick="(function(){alert('Add new Page Clicked!');return false;})();return false;"
+                            >
+                                <img class="box-img" src="assets/icons/file-earmark-plus.svg" alt="">
+                                <p>NEW PAGE</p>
+                            </div>
+                            <div class="box-items-l">
+                                <img class="box-img" src="assets/icons/file-earmark.svg" alt="">
+                                <a href="#"
+                                   onclick="(function(){alert('3 DOTs Clicked!');return false;})();return false;"
+                                >
+                                    <i id="target-1" class="fas fa-ellipsis-v fa-xs" style="color:#ADACAC"></i></a>
+                                <p>HOME</p>
+                            </div>
+                            <div class="box-items-l">
+                                <img class="box-img" src="assets/icons/file-earmark.svg" alt="">
+                                <a href="#"
+                                   onclick="(function(){alert('3 DOTs Clicked!');return false;})();return false;"
+                                ><i id="target-2" class="fas fa-ellipsis-v fa-xs" style="color:#ADACAC"></i></a>
+                                <p>ABOUT</p>
+                            </div>
+                            <div class="box-items-l">
+                                <img class="box-img" src="assets/icons/file-earmark.svg" alt="">
+                                <a href="#"
+                                   onclick="(function(){alert('3 DOTs Clicked!');return false;})();return false;"
+                                ><i id="target-3" class="fas fa-ellipsis-v fa-xs" style="color:#ADACAC"></i></a>
+                                <p>CONTACT</p>
+                            </div>
+                            <div class="box-items-l">
+                                <img class="box-img" src="assets/icons/file-earmark.svg" alt="">
+                                <a href="#"
+                                   onclick="(function(){alert('3 DOTs Clicked!');return false;})();return false;"
+                                ><i id="target-4" class="fas fa-ellipsis-v fa-xs" style="color:#ADACAC"></i></a>
+                                <p>PAYMENT</p>
+                            </div>
+                            <div class="box-items-l">
+                                <img class="box-img" src="assets/icons/file-earmark.svg" alt="">
+                                <a href="#"
+                                   onclick="(function(){alert('3 DOTs Clicked!');return false;})();return false;"
+                                ><i id="target-5" class="fas fa-ellipsis-v fa-xs" style="color:#ADACAC"></i></a>
+                                <p>CHECKOUT</p>
+                            </div>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+            <!-- Collapsed content -->
+
+            <!-- Collapse 2 -->
+            <div class="sidebar-components">
+                <div class="title-container">
+                    <a style="border-radius:12px;"
+                       class="left-items list-group-item list-group-item-action py-2 ripple"
+                       aria-current="true"
+                       data-mdb-toggle="collapse"
+                       href="#collapseExample2"
+                       aria-expanded="true"
+                       aria-controls="collapseExample2"
+                    >
+                        <i class="fas fa-globe-americas fa-fw me-3"></i><span>COUNTRY</span>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+                        &nbsp; &nbsp; <i class="fas fa-angle-down ms-5" style="color: #6C6C6C"></i>
+                    </a>
+                </div>
+                <!-- Collapsed content -->
+                <ul id="collapseExample2" class="collapse list-group list-group-flush">
+                    <div class="country-container">
+                        <div class="c-row-t">
+                            <div class="c-item-1">
+                                <div id="c-flag" class="c-flag">
+                                    <img id="c-img" src="https://www.worldatlas.com/r/w960-q80/upload/f4/e0/49/shutterstock-1665254809.png" alt="COUNTRY">
+                                </div>
+                                <div class="c-pmtgateway">
+<!--                                    <img id="cp-img" src="assets/icons/stripe.png" alt="PAYMENT GATEWAY"/>-->
+                                </div>
+                                <p id="c-code"></p>
+                            </div>
+                            <div class="c-item-2">
+                                <div class="cselect-btn">
+                                    <i style="color: #132C85;" class="fas fa-globe fa-xs me-3"></i>
+                                    <span id="selectedOne">Select Country</span>
+                                    <i id="carrow" style="color: #132C85; position: absolute;"
+                                       class="fas fa-caret-down ms-3"></i>
+                                </div>
+                                <div class="c-content">
+                                    <ul class="c-options">
+                                        <li>
+                                            <!--                                            <div class="list-items">-->
+                                            <!--                                                <img src="https://flagpedia.net/data/flags/normal/lk.png" alt="">-->
+                                            <!--                                                <p>Sri Lanka</p>-->
+                                            <!--                                            </div>-->
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                        <p class="paymentg-text">AVAILABLE PAYMENT GATEWAYS</p>
+                        <div class="c-row-b" >
+                            <div class="c-item-4 owl-carousel owl-theme">
+
+                                     <div id="mscard" class="c-item-4-box" onclick="selectPgateway(this);">
+                                        <img src="assets/icons/mscard.png" alt="LOGO">
+                                     </div>
+                                     <div  id="b" class="c-item-4-box" onclick="selectPgateway(this);">
+                                        <img src="assets/icons/stripe.png" alt="LOGO" >
+                                     </div>
+                                     <div id="c" class="c-item-4-box" onclick="selectPgateway(this);">
+                                        <img src="assets/icons/2checkt.png" alt="LOGO" >
+                                     </div>
+
+<!--                                <div class="c-item-4-box-v">-->
+<!--                                    <img src="assets/icons/mscard.png" alt="LOGO">-->
+<!--                                </div>-->
+<!--                                <div class="c-item-4-box">-->
+<!--                                    <img src="assets/icons/stripe.png" alt="LOGO">-->
+<!--                                </div>-->
+<!--                                <div class="c-item-4-box">-->
+<!--                                    <img src="assets/icons/2checkt.png" alt="LOGO">-->
+<!--                                </div>-->
+                            </div>
+
+                            <div class="controls">
+                                <button> <i id="target-6" class="fas fa-angle-left fa-sm"></i></button>
+                                <button> <i id="target-7" class="fas fa-angle-right fa-sm "></i></button>
+                            </div>
+
+<!--                                <div class="c-item-4-box">-->
+<!--                                    <img src="assets/icons/2checkt.png" alt="LOGO">-->
+<!--                                </div>-->
+
+                        </div>
+                    </div>
+                </ul>
+            </div>
+
+            <!-- Collapse 2 -->
+
+            <!-- Collapse 3 -->
+            <div class="sidebar-components">
+                <div class="title-container">
+                    <a style="border-radius:12px;"
+                       class="left-items list-group-item list-group-item-action py-2 ripple"
+                       aria-current="true"
+                       data-mdb-toggle="collapse"
+                       href="#collapseExample3"
+                       aria-expanded="true"
+                       aria-controls="collapseExample3"
+                    >
+                        <i class='fas fa-credit-card-alt fa-fw me-3'></i> <span>CARD </span>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+                        &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; <i class="fas fa-angle-down ms-5" style="color: #6C6C6C"></i>
+                    </a>
+                </div>
+                <!-- Collapsed content -->
+                <ul id="collapseExample3" class="collapse list-group list-group-flush">
+                    <div class="row">
+                        <div class="row-inside">
+                            <div class="box-items-r" draggable="true">
+                                <img src="assets/icons/card-lighttheme.png" alt="LIGHT THEME">
+                                <i id ="eyeId" class="far fa-eye fa-xs icon-stl"></i>
+                            </div>
+                            <div class="box-items-r" draggable="true">
+                                <img src="assets/icons/card-darktheme.png" alt="DARK THEME">
+                                <i class="far fa-eye fa-xs icon-stl"></i>
+                            </div>
+                            <div class="box-items-r" draggable="true">
+                                <img src="assets/icons/card-bubblestyle.png" alt="BUBBLE STYLE">
+                                <i class="far fa-eye fa-xs icon-stl"></i>
+                            </div>
+                            <div class="box-items-r" draggable="true">
+                                <img src="assets/icons/card-gradientstyle.png" alt="GRADIENT STYLE">
+                                <i class="far fa-eye fa-xs icon-stl"></i>
+                            </div>
+                            <div class="box-items-r" draggable="true">
+                                <img src="assets/icons/card-roundedstyle.png" alt="ROUNDED STYLE">
+                                <i class="far fa-eye fa-xs icon-stl"></i>
+                            </div>
+                            <div class="box-items-r" draggable="true">
+                                <img src="assets/icons/card-solidstyle.png" alt="SOLID STYLE">
+                                <i class="far fa-eye fa-xs icon-stl"></i>
+                            </div>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+            <!-- Collapse 3 -->
+
+            <!-- Collapse 4 -->
+            <div class="sidebar-components">
+                <div class="title-container">
+                    <a style="border-radius:12px;"
+                       class="left-items list-group-item list-group-item-action py-2 ripple"
+                       aria-current="true"
+                       data-mdb-toggle="collapse"
+                       href="#collapseExample4"
+                       aria-expanded="true"
+                       aria-controls="collapseExample4"
+                    >
+                        <i class='fas fa-bank fa-fw me-3'></i> <span>BANK</span>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;
+                        &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;<i class="fas fa-angle-down ms-5" style="color: #6C6C6C"></i>
+                    </a>
+                </div>
+                <!-- Collapsed content -->
+                <ul id="collapseExample4" class="collapse list-group list-group-flush">
+                    <div class="row">
+                        <div class="row-inside">
+                            <div class="box-items-r" draggable="true">
+                                <img src="assets/icons/bank-lighttheme.png" alt="LIGHT THEME">
+                                <i class="far fa-eye fa-xs icon-stl"></i>
+                            </div>
+                            <div class="box-items-r" draggable="true">
+                                <img src="assets/icons/bank-darktheme.png" alt="DARK THEME">
+                                <i class="far fa-eye fa-xs icon-stl"></i>
+                            </div>
+                            <div class="box-items-r" draggable="true">
+                                <img src="assets/icons/bank-bubblestyle.png" alt="BUBBLE STYLE">
+                                <i class="far fa-eye fa-xs icon-stl"></i>
+                            </div>
+                            <div class="box-items-r" draggable="true">
+                                <img src="assets/icons/bank-gradientstyle.png" alt="GRADIENT STYLE">
+                                <i class="far fa-eye fa-xs icon-stl"></i>
+                            </div>
+                            <div class="box-items-r" draggable="true">
+                                <img src="assets/icons/bank-roundedstyle.png" alt="ROUNDED STYLE">
+                                <i class="far fa-eye fa-xs icon-stl"></i>
+                            </div>
+                            <div class="box-items-r" draggable="true">
+                                <img src="assets/icons/bank-solidstyle.png" alt="SOLID STYLE">
+                                <i class="far fa-eye fa-xs icon-stl"></i>
+                            </div>
+
+                        </div>
+                    </div>
+                </ul>
+            </div>
+            <!-- Collapse 4 -->
+
+            <!-- Collapse 5 -->
+            <div class="sidebar-components">
+                <div class="title-container">
+                    <a style="border-radius:12px;"
+                       class="left-items list-group-item list-group-item-action py-2 ripple"
+                       aria-current="true"
+                       data-mdb-toggle="collapse"
+                       href="#collapseExample5"
+                       aria-expanded="true"
+                       aria-controls="collapseExample5"
+                    >
+                        <i class='fas fa-wallet fa-fw me-3'></i> <span>WALLET   </span>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+                        &nbsp; &nbsp; &nbsp;<i class="fas fa-angle-down ms-5" style="color: #6C6C6C"></i>
+                    </a>
+                </div>
+                <!-- Collapsed content -->
+                <ul id="collapseExample5" class="collapse list-group list-group-flush">
+                    <div class="row">
+                        <div class="row-inside">
+                            <div class="box-items-w" draggable="true">
+                                <img src="assets/icons/applepaylogo.png" alt="SOLID STYLE">
+                            </div>
+                            <div class="box-items-w" draggable="true">
+                                <img src="assets/icons/googlepaylogo.png" alt="SOLID STYLE">
+                            </div>
+                            <div class="box-items-w" draggable="true">
+                                <img src="assets/icons/amazonpay.png" alt="SOLID STYLE">
+                            </div>
+                            <div class="box-items-w" draggable="true">
+                                <img src="assets/icons/alipaylogo.png" alt="SOLID STYLE">
+                            </div>
+                            <div class="box-items-w" draggable="true">
+                                <img src="assets/icons/paypallogo.png" alt="SOLID STYLE">
+                            </div>
+                            <div class="box-items-w" draggable="true">
+                                <img src="assets/icons/payoneerlogo.png" alt="SOLID STYLE">
+                            </div>
+
+                        </div>
+                    </div>
+                </ul>
+            </div>
+            <!-- Collapse 5 -->
+
+            <!-- Collapse 6 -->
+            <div class="sidebar-components">
+                <div class="title-container">
+                    <a style="border-radius:12px;"
+                       class="left-items list-group-item list-group-item-action py-2 ripple"
+                       aria-current="true"
+                       data-mdb-toggle="collapse"
+                       href="#collapseExample6"
+                       aria-expanded="true"
+                       aria-controls="collapseExample6"
+                    >
+                        <i class='fas fa-cog fa-fw me-3'></i><span>PAYMENT SETTINGS</span><i
+                            class="fas fa-angle-down ms-4" style="color: #6C6C6C"></i>
+                    </a>
+                </div>
+                <!-- Collapsed content -->
+                <ul id="collapseExample6" class="collapse list-group list-group-flush">
+                    <div class="flex layout2">
+                        <div class="flex layout">
+
+                            <!-- payment settings -->
+
+                            <div class="flex layout1">
+                                <div class="small_text_body layout">PUBLISHABLE KEY</div>
+                                <div class="contain_block1 layout">
+                                    <div class="flex1 layout2">
+                                        <div class="item3">
+
+
+                                            <div class="input-box">
+                                                <div class="item3">
+                                                    <img src="./assets/images/b5007414a0c342cc52ea85fd846d1112.png"
+                                                         alt="" class="image3 layout">
+                                                    <label for="PKInput"></label><input type="password" id="PKInput"/>
+                                                    <span class="eye-1" onclick="publishableKeyFunction()">
+                                                               <div class="item5">
+                                                   
+                                                          <i id="eye-one" class="fa fa-eye-slash"></i>
+
+                                        </div>
+
+                                                    </span></div>
+                                                <div class="spacer2"></div>
+
+                                                <div class="spacer3"></div>
+
+                                            </div>
+                                        </div>
+                                        <div class="spacer3"></div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- <div class="spacer3"></div> -->
+                        <div class="flex layoutsk">
+                            <div class="flex layout1">
+                                <div class="small_text_body layout">SECRET KEY</div>
+                                <div class="contain_block1 layout">
+                                    <div class="flex1 layout2">
+                                        <div class="item3">
+
+
+                                            <div class="input-box">
+                                                <div class="item3">
+                                                    <img src="./assets/images/b5007414a0c342cc52ea85fd846d1112.png"
+                                                         alt="" class="image3 layout">
+                                                    <label for="SKInput"></label><input type="password" id="SKInput"/>
+                                                    <span class="eye" onclick="secretKeyFunction()">
+                                                <div class="item5">
+                                                 
+                                                    <i id="eye-two" class="fa fa-eye-slash"></i>
+
+                                        </div>
+                                    </span></div>
+                                            </div>
+                                            <div class="spacer2"></div>
+
+                                            <div class="spacer3"></div>
+
+                                        </div>
+                                    </div>
+                                    <div class="spacer3"></div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex1 layout3">
+                        <a href="#"
+                           onclick="(function(){alert('Clicked!');return false;})();return false;"
+                        >
+                            <div class="small_text_body1 layout">STRIPE DASHBOARD &nbsp; <i
+                                    class="fas fa-external-link-alt"></i></div>
+                        </a>
+                    </div>
+                </ul>
+
+                <!-- Collapse 6 -->
+
+            </div>
+
+        </div>
+    </div>
+</nav>
+<!-- End Left Sidebar -->
+
+
+<!-- Start Right Sidebar -->
+<nav id="sidebarMenu-2" class="collapse d-lg-block sidebar-right collapse bg-white">
+    <div class="position-sticky">
+
+        <!-- <div class="block1 layout">
+            <div class="contain_search">
+                <div class="contain_block layout">
+                    <div class="flex searchlayout">
+                        <div class="item3">
+                            <div class="small_text_body layout">SEARCH</div>
+
+                            <input type="text" placeholder="SEARCH " id="searchID" class="form-label">
+                            <div class="item3 input">
+                                <form>
+                                    <input type="text" placeholder="search..." class="input">
+                                    <button type="submit" class="button"><i class="fas fa-search"></i></button>
+                                </form>
+
+                            </div>
+                            <div class="spacer"></div>
+                        </div>
+                        <div class="item">
+                            <img src="./assets/images/03af6e61896d3b4a3d9e1e370e4a954c.png" alt="" class="icon layout">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div> -->
+
+
+        <div id="searchId" class="input-group">
+            <div id="searchformId" class="form-outline">
+              <input id="search-input" type="search" id="form1" class="form-control" />
+              <label id="searchlableId" class="form-label" for="form1">Search</label>
+            </div>
+            <button id="search-button" type="button" class="btn btn-primary">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+
+          
+
+
+
+
+
+
+        <div class="list-group list-group-flush mx-3 mt-4">
+            <!-- Collapse 1 -->
+            <div class="sidebar-components">
+                <div class="title-container">
+                    <div class="right-item-ta ">
+                        <button class="a-items"
+                                onclick="(function(){alert('1 Clicked!');return false;})();return false;"
+                        ><i class="bi bi-align-start i-Properties"></i></button>
+                        <button class="a-items"
+                                onclick="(function(){alert('2 Clicked!');return false;})();return false;"
+                        ><i class="bi bi-align-center i-Properties"></i></button>
+                        <button class="a-items"
+                                onclick="(function(){alert('3 Clicked!');return false;})();return false;"
+                        ><i class="bi bi-align-end i-Properties"></i></button>
+                        <button class="a-items"
+                                onclick="(function(){alert('4 Clicked!');return false;})();return false;"
+                        ><i class="bi bi-align-top i-Properties"></i></button>
+                        <button class="a-items"
+                                onclick="(function(){alert('5 Clicked!');return false;})();return false;"
+                        ><i class="bi bi-align-middle i-Properties"></i></button>
+                        <button class="a-items"
+                                onclick="(function(){alert('6 Clicked!');return false;})();return false;"
+                        ><i class="bi bi-align-bottom i-Properties"></i></button>
+
+
+                    </div>
+                </div>
+                <div class="title-container">
+                    <a style="border-radius:12px;"
+                       class="right-items list-group-item list-group-item-action py-2 ripple"
+                       aria-current="true"
+                       data-mdb-toggle="collapse"
+                       href="#collapseExampleR-1"
+                       aria-expanded="true"
+                       aria-controls="collapseExampleR-1"
+                    >
+                        <i class="fas fa-pager fa-fw me-3"></i><span>HEADER</span>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+                        &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;<i class="fas fa-angle-down ms-5"
+                                                                  style="color: #6C6C6C"></i>
+                    </a>
+                </div>
+                <!-- Collapsed content -->
+                <ul id="collapseExampleR-1" class="collapse list-group list-group-flush">
+                    <div class="row">
+                        <div class="row-inside">
+                            <div class="box-items-l" draggable="true">
+                                <i class="far fa-eye fa-xs icon-stl"></i>
+                            </div>
+                            <div class="box-items-l" draggable="true">
+                                <i class="far fa-eye fa-xs icon-stl"></i>
+                            </div>
+                            <div class="box-items-l" draggable="true">
+                                <i class="far fa-eye fa-xs icon-stl"></i>
+                            </div>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+            <!-- Collapse 1 -->
+
+            <!-- Collapse 2 -->
+            <div class="sidebar-components">
+                <div class="title-container">
+                    <a style="border-radius:12px;"
+                       class="right-items list-group-item list-group-item-action py-2 ripple"
+                       aria-current="true"
+                       data-mdb-toggle="collapse"
+                       href="#collapseExampleR-2"
+                       aria-expanded="true"
+                       aria-controls="collapseExampleR-2"
+                    >
+                        <i class="fas fa-film fa-fw me-3"></i><span>HERO</span>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+                        &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<i class="fas fa-angle-down ms-5"
+                                                                                 style="color: #6C6C6C"></i>
+                    </a>
+                </div>
+                <!-- Collapsed content -->
+                <ul id="collapseExampleR-2" class="collapse list-group list-group-flush">
+                    <div class="row">
+                        <div class="row-inside">
+                            <div class="box-items-l" draggable="true">
+                                <i class="far fa-eye fa-xs icon-stl"></i>
+                            </div>
+                            <div class="box-items-l" draggable="true">
+                                <i class="far fa-eye fa-xs icon-stl"></i>
+                            </div>
+                            <div class="box-items-l" draggable="true">
+                                <i class="far fa-eye fa-xs icon-stl"></i>
+                            </div>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+            <!-- Collapse 2 -->
+
+            <!-- Collapse 3 -->
+            <div class="sidebar-components">
+                <div class="title-container">
+                    <a style="border-radius:12px;"
+                       class="right-items list-group-item list-group-item-action py-2 ripple"
+                       aria-current="true"
+                       data-mdb-toggle="collapse"
+                       href="#collapseExampleR-3"
+                       aria-expanded="true"
+                       aria-controls="collapseExampleR-3"
+                    >
+                        <i class="far fa-file-alt fa-fw me-3"></i><span>FEATURES</span>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+                        &nbsp; &nbsp; &nbsp;<i class="fas fa-angle-down ms-5"
+                                               style="color: #6C6C6C"></i>
+                    </a>
+                </div>
+                <!-- Collapsed content -->
+                <ul id="collapseExampleR-3" class="collapse list-group list-group-flush">
+                    <div class="row">
+                        <div class="row-inside">
+                            <div class="box-items-l" draggable="true">
+                                <i class="far fa-eye fa-xs icon-stl"></i>
+                            </div>
+                            <div class="box-items-l" draggable="true">
+                                <i class="far fa-eye fa-xs icon-stl"></i>
+                            </div>
+                            <div class="box-items-l" draggable="true">
+                                <i class="far fa-eye fa-xs icon-stl"></i>
+                            </div>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+            <!-- Collapse 3 -->
+
+            <!-- Collapse 4 -->
+            <div class="sidebar-components">
+                <div class="title-container">
+                    <a style="border-radius:12px;"
+                       class="right-items list-group-item list-group-item-action py-2 ripple"
+                       aria-current="true"
+                       data-mdb-toggle="collapse"
+                       href="#collapseExampleR-4"
+                       aria-expanded="true"
+                       aria-controls="collapseExampleR-4"
+                    >
+                        <i class="fas fa-tablet fa-fw me-3"></i><span>FOOTER</span>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+                        &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; <i class="fas fa-angle-down ms-5"
+                                                             style="color: #6C6C6C"></i>
+                    </a>
+                </div>
+                <!-- Collapsed content -->
+                <ul id="collapseExampleR-4" class="collapse list-group list-group-flush">
+
+                    <div class="row">
+                        <div class="row-inside">
+                            <div class="box-items-l" draggable="true">
+                                <i class="far fa-eye fa-xs icon-stl"></i>
+                            </div>
+                            <div class="box-items-l" draggable="true">
+                                <i class="far fa-eye fa-xs icon-stl"></i>
+                            </div>
+                            <div class="box-items-l" draggable="true">
+                                <i class="far fa-eye fa-xs icon-stl"></i>
+                            </div>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+            <!-- Collapse 4 -->
+
+            <!-- Collapse 5 -->
+            <div class="sidebar-components">
+                <div class="title-container">
+                    <a style="border-radius:12px;"
+                       class="right-items list-group-item list-group-item-action py-2 ripple"
+                       aria-current="true"
+                       data-mdb-toggle="collapse"
+                       href="#collapseExampleR-5"
+                       aria-expanded="true"
+                       aria-controls="collapseExampleR-5"
+                    >
+                        <i class="fab fa-wpforms fa-fw me-3"></i><span>FORM</span>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+                        &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;<i class="fas fa-angle-down ms-5"
+                                                                                style="color: #6C6C6C"></i>
+                    </a>
+                </div>
+                <!-- Collapsed content -->
+                <ul id="collapseExampleR-5" class="collapse list-group list-group-flush">
+                    <div class="row">
+                        <div class="row-inside">
+                            <div class="box-items-l" draggable="true">
+                                <i class="far fa-eye fa-xs icon-stl"></i>
+                            </div>
+                            <div class="box-items-l" draggable="true">
+                                <i class="far fa-eye fa-xs icon-stl"></i>
+                            </div>
+                            <div class="box-items-l" draggable="true">
+                                <i class="far fa-eye fa-xs icon-stl"></i>
+                            </div>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+            <!-- Collapse 5 -->
+
+            <!-- Collapse 6 -->
+            <div class="sidebar-components">
+                <div class="title-container">
+                    <a style="border-radius:12px;"
+                       class="right-items list-group-item list-group-item-action py-2 ripple"
+                       aria-current="true"
+                       data-mdb-toggle="collapse"
+                       href="#collapseExampleR-6"
+                       aria-expanded="true"
+                       aria-controls="collapseExampleR-6"
+                    >
+                        <i class="fas fa-users fa-fw me-3"></i><span>PARTNERS</span>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+                        &nbsp; &nbsp; <i class="fas fa-angle-down ms-5"
+                                         style="color: #6C6C6C"></i>
+                    </a>
+                </div>
+                <!-- Collapsed content -->
+                <ul id="collapseExampleR-6" class="collapse list-group list-group-flush">
+                    <div class="row">
+                        <div class="row-inside">
+                            <div class="box-items-l" draggable="true">
+                                <i class="far fa-eye fa-xs icon-stl"></i>
+                            </div>
+                            <div class="box-items-l" draggable="true">
+                                <i class="far fa-eye fa-xs icon-stl"></i>
+                            </div>
+                            <div class="box-items-l" draggable="true">
+                                <i class="far fa-eye fa-xs icon-stl"></i>
+                            </div>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+            <!-- Collapse 6-->
+
+            <!-- Collapse 7 -->
+            <div class="sidebar-components">
+                <div class="title-container">
+                    <a style="border-radius:12px;"
+                       class="right-items list-group-item list-group-item-action py-2 ripple"
+                       aria-current="true"
+                       data-mdb-toggle="collapse"
+                       href="#collapseExampleR-7"
+                       aria-expanded="true"
+                       aria-controls="collapseExampleR-7"
+                    >
+                        <i class="far fa-images fa-fw me-3"></i><span>GALLERY</span>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+                        &nbsp; &nbsp; &nbsp;&nbsp; <i class="fas fa-angle-down ms-5"
+                                                      style="color: #6C6C6C"></i>
+                    </a>
+                </div>
+                <!-- Collapsed content -->
+                <ul id="collapseExampleR-7" class="collapse list-group list-group-flush">
+                    <div class="row">
+                        <div class="row-inside">
+                            <div class="box-items-l" draggable="true">
+                                <i class="far fa-eye fa-xs icon-stl"></i>
+                            </div>
+                            <div class="box-items-l" draggable="true">
+                                <i class="far fa-eye fa-xs icon-stl"></i>
+                            </div>
+                            <div class="box-items-l" draggable="true">
+                                <i class="far fa-eye fa-xs icon-stl"></i>
+                            </div>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+            <!-- Collapse 7-->
+
+            <!-- Collapse 8 -->
+            <div class="sidebar-components">
+                <div class="title-container">
+                    <a style="border-radius:12px;"
+                       class="right-items list-group-item list-group-item-action py-2 ripple"
+                       aria-current="true"
+                       data-mdb-toggle="collapse"
+                       href="#collapseExampleR-8"
+                       aria-expanded="true"
+                       aria-controls="collapseExampleR-8"
+                    >
+                        <i class="fas fa-money-bill-alt fa-fw me-3"></i><span>PRICING</span>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+                        &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;<i class="fas fa-angle-down ms-5"
+                                                            style="color: #6C6C6C"></i>
+                    </a>
+                </div>
+                <!-- Collapsed content -->
+                <ul id="collapseExampleR-8" class="collapse list-group list-group-flush">
+                    <div class="row">
+                        <div class="row-inside">
+                            <div class="box-items-l" draggable="true">
+                                <i class="far fa-eye fa-xs icon-stl"></i>
+                            </div>
+                            <div class="box-items-l" draggable="true">
+                                <i class="far fa-eye fa-xs icon-stl"></i>
+                            </div>
+                            <div class="box-items-l" draggable="true">
+                                <i class="far fa-eye fa-xs icon-stl"></i>
+                            </div>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+            <!-- Collapse 8-->
+
+            <!-- Collapse 9 -->
+            <div class="sidebar-components">
+                <div class="title-container">
+                    <a style="border-radius:12px;"
+                       class="right-items list-group-item list-group-item-action py-2 ripple"
+                       aria-current="true"
+                       data-mdb-toggle="collapse"
+                       href="#collapseExampleR-9"
+                       aria-expanded="true"
+                       aria-controls="collapseExampleR-9"
+                    >
+                        <i class="fas fa-sitemap fa-fw me-3"></i><span>TEAMS</span>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+                        &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;<i class="fas fa-angle-down ms-5"
+                                                                   style="color: #6C6C6C"></i>
+                    </a>
+                </div>
+                <!-- Collapsed content -->
+                <ul id="collapseExampleR-9" class="collapse list-group list-group-flush">
+                    <div class="row">
+                        <div class="row-inside">
+                            <div class="box-items-l" draggable="true">
+                                <i class="far fa-eye fa-xs icon-stl"></i>
+                            </div>
+                            <div class="box-items-l" draggable="true">
+                                <i class="far fa-eye fa-xs icon-stl"></i>
+                            </div>
+                            <div class="box-items-l" draggable="true">
+                                <i class="far fa-eye fa-xs icon-stl"></i>
+                            </div>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+            <!-- Collapse 9-->
+
+            <!-- Collapse 10 -->
+            <div class="sidebar-components">
+                <div class="title-container">
+                    <a style="border-radius:12px;"
+                       class="right-items list-group-item list-group-item-action py-2 ripple"
+                       aria-current="true"
+                       data-mdb-toggle="collapse"
+                       href="#collapseExampleR-10"
+                       aria-expanded="true"
+                       aria-controls="collapseExampleR-10"
+                    >
+                        <i class="fas fa-comment-alt fa-fw me-3"></i> <span>TESTIMONIAL </span>&nbsp;&nbsp;&nbsp;
+                        &nbsp;<i class="fas fa-angle-down ms-5"
+                                 style="color: #6C6C6C"></i>
+                    </a>
+                </div>
+                <!-- Collapsed content -->
+                <ul id="collapseExampleR-10" class="collapse list-group list-group-flush">
+                    <div class="row">
+                        <div class="row-inside">
+                            <div class="box-items-l" draggable="true">
+                                <i class="far fa-eye fa-xs icon-stl"></i>
+                            </div>
+                            <div class="box-items-l" draggable="true">
+                                <i class="far fa-eye fa-xs icon-stl"></i>
+                            </div>
+                            <div class="box-items-l" draggable="true">
+                                <i class="far fa-eye fa-xs icon-stl"></i>
+                            </div>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+            <!-- Collapse 10-->
+
+        </div>
+    </div>
+</nav>
+<!--End Right Sidebar -->
+
+
+<!--Main layout-->
+<main class="main-container">
+    <!--    <main style="margin-top: -42px;margin-left:70px;margin-right:310px;">-->
+    <div class="container pt-4">
+        <!-- Section: Main chart -->
+        <section class="mb-4">
+            <div class="card">
+                <!--<div class="card-header py-3">
+                   <h5 class="mb-0 text-center"><strong>Sales</strong></h5>
+                   </div>//-->
+                <div class="canvas card-body">
+                    <canvas class=" canvas-style my-4 w-100" id="myChart">
+                        <div class="cs">
+                            <nav id="navOne">
+
+                            </nav>
+                        </div>
+                    </canvas>
+                </div>
+            </div>
+        </section>
+        <!-- Section: Main chart -->
+    </div>
+</main>
+<!--Main layout-->
+<!-- ************************* -->
+<!-- MDB -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.js"></script>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+<!-- Custom JavaScript-->
+<script src="JS/main.js"></script>
+<script src="JS/countryList.js"></script>
+<script src="JS/paymentGateways.js"></script>
+<script src="JS/pageSelecter.js"></script>
+
+<!-- JQuery Country Picker -->
+<script src="https://code.jquery.com/jquery-3.6.1.slim.min.js" integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA=" crossorigin="anonymous"></script>
+
+<!-- Owl Carousel JS -->
+
+
+<script src="OwlCarousel/dist/owl.carousel.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 1,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 3
+                }
+            }
+        })
+    })
+</script>
+
+</body>
+</html>

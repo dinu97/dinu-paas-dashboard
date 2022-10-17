@@ -1,0 +1,81 @@
+Color palete:-
+
+Project background color - #FFFFFF
+Header Icon color:- #083EFF
+Line color:- #E6E6E6
+
+---------------------Pages------------------------------------------
+Title Box Background color:- #F6F6F6
+Title Box Icon and Text color:- #1A2859
+Box color:-#F6F6F6
+Selected Box color:- #FFFFFF
+Box Icon and Text color:- #132C85
+Page Area 3Dots color:- #ADACAC
+Dropdown Icon color:- #6C6C6C
+--------------------------------------------------------------------
+
+-----------------------Country--------------------------------------
+COUNTRY TITLE BOX Rectangle:- #F6F6F6
+Country text :- #1A2859
+Dropdown icon colour:- #6C6C6C
+country icon color:-#1A2859
+Country and available payment gateway as image :- #D9D9D9,#FFFFFF,#1A2859
+SELECTED COUNTRY & P: GATEWAY BOX background colour :- #F6F6F6
+COUNTRY SEARCH Rectangle :-#F6F6F6
+country SEARCH globle icon:-#132C85
+SELECT A COUNTRY(Text color):-#132C85
+inside Rectangle in SEARCH:- #FFFCFC
+PAYMENT GATEWAY LIST text color:-#1A2859
+LEFT & RIGHT ARROWS :-#D9D9D9
+P GATEWAY BOX background:-#F6F6F6
+---------------------------------------------------------------------
+
+
+---------------------------Card Area--------------------------------
+Card TITLE BOX Rectangle:- #F6F6F6
+CARD text :- #1A2859
+CARD Dropdown icon colour:- #6C6C6C
+CARD BOTTOM Line color:-#E6E6E6
+CARD TOP Line color:-#E6E6E6
+CARD FORM VISIBILTY (EYE icon) color:-#132C85
+CARD THEME BOX background color:#F6F6F6
+CARD THEME BOX text color:#959595
+--------------------------------------------------------------------
+
+---------------------Bank Area--------------------------------------
+bank TITLE BOX Rectangle:- #F6F6F6
+bank text :- #1A2859
+bank Dropdown icon colour:- #6C6C6C
+bank BOTTOM Line color:-#E6E6E6
+bank TOP Line color:-#E6E6E6
+bank FORM VISIBILTY (EYE icon) color:-#132C85
+bank THEME BOX background color:#F6F6F6
+bank THEME BOX text color:#959595
+--------------------------------------------------------------------
+
+--------------------------WALLET AREA--------------------------------
+WALLET TITLE BOX Rectangle:- #F6F6F6
+WALLET text :- #1A2859
+WALLET Dropdown icon colour:- #6C6C6C
+WALLET BOTTOM Line color:-#E6E6E6
+WALLET TOP Line color:-#E6E6E6
+bank THEME BOX background color:#F6F6F6
+--------------------------------------------------------------------
+
+----------------PAYMENT SETTIGNS AREA ----------------------------------
+WALLET BOTTOM Line color:-#E6E6E6
+WALLET TOP Line color:-#E6E6E6
+P: GATEWAY DASHBOARD LINK icon color:- #3965FF
+P: GATEWAY DASHBOARD LINK text :-#083EFF
+Publishable key text:-#1A2859
+Publishable KEY ICON:-#132C85
+VISIBITILY EYE :-#959595
+INPUT rectangle :-#FFFFFF
+input rectangle 2:-#F6F6F6
+Secret key ICON:-#132C85
+Secret key ICON text:-#132C85
+VISIBITILY EYE :-#959595
+INPUT rectangle :-#FFFFFF
+input rectangle 2 :-#F6F6F6
+--------------------------------------------------------------------
+
