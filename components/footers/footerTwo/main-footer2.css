@@ -1,0 +1,21 @@
+@import url('https://db.onlinewebfonts.com/c/000833a3a58fb083c44b9de42c2ff0a2?family=Gilroy+SemiBold');
+
+#footer2{
+background: #FFFFFF!important;
+border: 0.2px solid #1A2859!important;
+border-radius: 6px;
+}
+body{
+    background-color:#F5F5F5 !important;
+}
+#btnSubscribe{
+    background-color: #0081FE;
+    color: #fff;
+    box-shadow: 0 4px 9px -4px #3b71ca;
+}
+#textsubscribe{
+    color: #1A2859;
+}
+#copyright{
+    color:#0A142F ;
+}
