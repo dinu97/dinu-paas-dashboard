@@ -44,7 +44,7 @@ class card extends HTMLElement {
 
         <div class="px-3 pt-3">
             <label for="card-number" class="d-flex justify-content-between" id="countryId"> Country</label>
-            <select id="card-number" class="form-control">
+            <select id="card-number" class="form-control selectcountry">
             <option>select country</option>
             <option value="SL">Sri Lanka</option>
             <option value="AX">Aland Islands</option>
