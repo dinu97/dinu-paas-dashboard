@@ -5,7 +5,7 @@ class card extends HTMLElement {
     connectedCallback() {
       this.innerHTML = `
 
-        <link href="card/main-card.css" rel="stylesheet">
+        <link href="components/card/main-card.css" rel="stylesheet">
        
         
         <div class="container mt-4 d-flex justify-content-center main">
@@ -14,11 +14,11 @@ class card extends HTMLElement {
             <div class="px-3 pt-1 form-group">
                 <label for="card number" class="d-flex justify-content-between">
                     <span class="cardnumber">Card number</span>
-                    <img src="card/images/marstercardIcon.png" width="25" class="marstercard">
+                    <img src="components/card/images/marstercardIcon.png" width="25" class="marstercard">
                     
-                    <img src="card/images/americanexpressIcon.png" width="25" class="amaricanE">
+                    <img src="components/card/images/americanexpressIcon.png" width="25" class="amaricanE">
                     
-                    <img src="card/images/visaIcon.png" width="25" class="visacard">
+                    <img src="components/card/images/visaIcon.png" width="25" class="visacard">
     
                 </label>
                 
@@ -38,7 +38,7 @@ class card extends HTMLElement {
                  <div class="form-group">
                     <label for="cvv" class="cvvtxt">CVC</label>
                     <input type="number " id="cvv" maxlength="3"  name="number" class="form-control cvv" placeholder="123">
-                    <img src="card/images/cardIcon.png" width="20" class="cvc-ard">
+                    <img src="components/card/images/cardIcon.png" width="20" class="cvc-ard">
                 </div>
             </div>
     
@@ -48,7 +48,7 @@ class card extends HTMLElement {
                 <label for="card number" class="d-flex justify-content-between">
                     <span class="labeltxt">CARD NUMBER</span>
                    
-                    <img src="components/card/images/card.png" width="25" class="cvc-ard">
+                    <img src="components/card/images/cardIcon.png" width="25" class="cvc-ard">
                 </label>
                 <input type="number" name="number" class="form-control inputtxt" placeholder="8881 2545 2545 2245">
             </div> -->
@@ -193,7 +193,7 @@ class card extends HTMLElement {
              -->
         </div>
     </div>
-      <script src="card/cardFormValidation.js"></script>
+      <script src="components/card/cardFormValidation.js"></script>
   
         `
       
