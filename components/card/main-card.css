@@ -3,7 +3,7 @@
 #cardId{
     background: #FFFFFF!important;
     border: 0.4px solid #E6E6E6!important;
-    border-radius: 8px!important;
+    border-radius: 20px!important;
 }
 
 /* :root{
@@ -31,13 +31,13 @@
 } */
 .main {
     background-color: #fffdff;
-    padding: 50px 0;
+    padding: 40px 0;
 }
 .cardPayments{
     background-color:var(--third-color);
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-    width:300px;
-    border-radius: 29px;
+    
+    border-radius: 8px;
 }
 .pay{
     font-size: 18px;
@@ -172,26 +172,45 @@
     font-weight: 500;
     margin-top: 5px;
 }
-.form-control{
+/* .form-control{
     background: #F6F8FA;
 border: 0.4px solid rgba(230, 230, 230, 0.9)!important;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.03)!important;
 border-radius: 5px!important;
 
-}
+} */
 #datepicker{
     padding-top: 1.5rem!important;
     margin-bottom: -19px!important;
 }
 .accountnumber{
     font-size: 12px;
+   
+    background: #FFFFFF;
+border: 0.4px solid #E6E6E6;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.03);
+border-radius: 5px;
 }
 .expiry{
     font-size: 12px;
+    
+   
+    background: #FFFFFF;
+border: 0.4px solid #E6E6E6;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.03);
+border-radius: 5px;
 }
 .cvv{
     font-size: 12px;
+    background: #FFFFFF;
+border: 0.4px solid #E6E6E6;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.03);
+border-radius: 5px;
 }
 .selectcountry{
     font-size: 12px;
+    background: #FFFFFF;
+border: 0.4px solid #E6E6E6;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.03);
+border-radius: 5px;
 }

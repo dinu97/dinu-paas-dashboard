@@ -9,7 +9,7 @@ class card extends HTMLElement {
   
         
     <div class="container mt-4 d-flex justify-content-center main">
-    <div class="cardPayments" id="cardId">
+    <div class="col-12 col-lg-9 col-xl-8 cardPayments" id="cardId">
         
         <div class="px-3 pt-3">
             <label for="card number" class="d-flex justify-content-between">
