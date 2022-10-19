@@ -30,7 +30,7 @@ class card extends HTMLElement {
              <div>
                 <label for="cvv" class="cvvtxt">CVC</label>
                 <input type="text" name="number" class="form-control cvv" placeholder="123">
-                <img src="card/images/card.png" width="25" class="cvc-ard">
+                <img src="components/card/images/card.png" width="20" class="cvc-ard">
             </div>
         </div>
         <!-- <div class="px-3 pt-3">
