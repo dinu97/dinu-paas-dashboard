@@ -9,6 +9,7 @@ class card extends HTMLElement {
        
         
         <div class="container mt-4 d-flex justify-content-center main">
+        <form name="cardform" method="post" onsubmit="checkforblank()">
         <div class=" cardPayments" id="cardId">
             
             <div class="px-3 pt-1 form-group">
@@ -192,6 +193,7 @@ class card extends HTMLElement {
             </div>
              -->
         </div>
+        </form>
     </div>
       <script src="components/card/cardFormValidation.js"></script>
   
