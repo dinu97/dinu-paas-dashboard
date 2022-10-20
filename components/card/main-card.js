@@ -5,7 +5,7 @@ class card extends HTMLElement {
     connectedCallback() {
       this.innerHTML = `
 
-        <link href="card/main-card.css" rel="stylesheet">
+        <link href="components/card/main-card.css" rel="stylesheet">
        
         
         
@@ -26,14 +26,14 @@ class card extends HTMLElement {
                                         <div class="form card-formMain-div">
                                             <label class="d-flex justify-content-between " for="cardNumber" id="cardNumber-lableId">
                                                 <span class="cardnumber-span">Card number</span>
-                                                <img src="card/images/marstercardIcon.png" width="25" class="marstercard">
+                                                <img src="components/card/images/marstercardIcon.png" width="25" class="marstercard">
 
-                                                    <img src="card/images/americanexpressIcon.png" width="25" class="amaricanE">
+                                                    <img src="components/card/images/americanexpressIcon.png" width="25" class="amaricanE">
 
-                                                        <img src="card/images/visaIcon.png" width="25" class="visacard">
+                                                        <img src="components/card/images/visaIcon.png" width="25" class="visacard">
 
                                                         </label>
-                                                        <input type="text" id="cardNumber" placeholder="1234 1234 1234 1234" class="form-control form-control-lg input-cardDetails" required />
+                                                        <input type="text" id="cardNumber" placeholder="1234 1234 1234 1234" class="form-control form-control-lg input-cardDetails" required >
                                                     </div>
 
                                                 </div>
@@ -48,7 +48,7 @@ class card extends HTMLElement {
                                                     <div class="col-6 col-md-6  mb-2 pb-2" >
                                                         <label class="d-flex justify-content-between" for="cvcNumber">
                                                             <span class="cvcnumber-span">Card number</span>
-                                                            <img src="card/images/card.png" width="20" class="cvc-ard">
+                                                            <img src="components/card/images/card.png" width="20" class="cvc-ard">
 
 
                                                         </label>
@@ -190,7 +190,7 @@ class card extends HTMLElement {
 
 
                                                 <div class="d-flex justify-content-center mt-3">
-                                                    <button id="CardFormMain-btn" type="submit" class="btn btn-info btn-rounded btn-lg w-100">Confirm Payment</button>
+                                                    <button id="btnConfirm" type="submit" class="btn btn-info btn-rounded btn-lg w-100">Confirm Payment</button>
                                                 </div>
 
                                             </form>
@@ -205,7 +205,7 @@ class card extends HTMLElement {
 
                 <!-- Form End -->
 
-      <script src="card/cardFormValidation.js"></script>
+      <script src="components/card/cardFormValidation.js"></script>
   
         `
       
