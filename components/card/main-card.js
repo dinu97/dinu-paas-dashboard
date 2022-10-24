@@ -23,9 +23,9 @@ class card extends HTMLElement {
                                             <label class="d-flex justify-content-between " for="cardNumber"
                                                 id="cardNumber-lableId">
                                                 <span class="cardnumber-span">Card number</span>
-                                                <img src="images/marstercardIcon.png" width="25" class="marstercard">
-                                                <img src="images/americanexpressIcon.png" width="25" class="amaricanE">
-                                                <img src="images/visaIcon.png" width="25" class="visacard">
+                                                <img src="components/card/images/marstercardIcon.png" width="25" class="marstercard">
+                                                <img src="components/card/images/americanexpressIcon.png" width="25" class="amaricanE">
+                                                <img src="components/card/images/visaIcon.png" width="25" class="visacard">
                                             </label>
                                             <input id="cc-number" type="tel" class="input-lg form-control cc-number" autocomplete="cc-number" placeholder="•••• •••• •••• ••••" data-payment='cc-number' required>
                                         </div>
@@ -43,7 +43,7 @@ class card extends HTMLElement {
                                             <div class="form-group">
                                                 <label class="d-flex justify-content-between" for="cvcNumber">
                                                     <span class="cvcnumber-span">Card cvc number</span>
-                                                    <img src="images/card.png" width="20" class="cvc-ard">
+                                                    <img src="components/card/images/card.png" width="20" class="cvc-ard">
                                                 </label>
                                                 <input id="cc-cvc" type="tel" maxlength="3" class="input-lg form-control cc-cvc" autocomplete="off" placeholder="•••" data-payment='cc-cvc' required> 
                                             </div>

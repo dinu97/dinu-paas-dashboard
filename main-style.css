@@ -1563,20 +1563,20 @@ html::-webkit-scrollbar {
 }
 
 
-form {
+/* form {
     background: #fff;
     width: 0px;
     height: 55px;
     display: flex;
 
-}
+} */
 
-form input {
+/* form input {
 
     border: none;
     outline: none;
     display: block;
-}
+} */
 
 /* .flexx {
  display: flex;
@@ -1670,21 +1670,21 @@ option {
     margin: 10px 10px 10px 10px;
 }
 
-form {
+/* form {
     background: rgb(255, 255, 255);
     height: 55px;
     margin: 1px 0px 0px 0px;
     display: flex;
 
-}
+} */
 
-form input {
+/* form input {
     flex: 0;
     border: none;
     display: block;
-}
+} */
 
-form button {
+/* form button {
     position: relative;
     right: 0;
     top: 0;
@@ -1694,7 +1694,7 @@ form button {
     color: white;
     margin: -15px -35px 0px -50px;
     font-size: 40px;
-}
+} */
 
 /* form .fa-search {
   align-self: center;
@@ -1703,13 +1703,13 @@ form button {
   border: none;
 
 } */
-form .fa-search {
-    /* align-self: center; */
+/* form .fa-search {
+    align-self: center;
     position: absolute;
     font-size: 9px;
     color: #083EFF;
     margin: 19px -166px 12px 20px;
-}
+} */
 
 .input-group {
     position: relative;
